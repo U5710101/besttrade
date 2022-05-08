@@ -1,0 +1,6 @@
+get_all_investors_sql = 'select id, name, address, status from investor'
+get_investor_by_id_sql = 'select id, name, address, status from investor where id=%s'
+get_investors_by_name_sql = 'select id, name, address, status from investor where name = %s'
+create_investor = 'insert into investor (name, address, status) values (%s, %s, %s)'
+update_investor_address_sql = 'update investor set address = %s where id = %s'
+delete_investor_by_id = 'delete from investor where id = %s'
