@@ -9,6 +9,8 @@ from app.src.api.blueprints.investor_bp import investor_bp
 app = Flask(__name__) # special variable that is assigned to every module (imported or executed)
 
 app.register_blueprint(investor_bp)
+app.register_blueprint(ui_bp)
+
 
 @app.route('/healthcheck', methods=['GET'])
 def health_check():
